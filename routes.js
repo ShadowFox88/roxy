@@ -1,8 +1,12 @@
 'use strict'
+const request = require('request')
+
 module.exports = function (app, opts) {
   // Setup routes, middleware, and handlers
-  app.get('/', (req, res) => {
-    res.locals.name = 'roxy'
-    res.render('index')
+  app.all('*', (req, res) => {
+    let { webhook } = req.body
+
+    console.log(JSON.stringify(req.headers))
+    request(webhook).pipe(res)
   })
 }
