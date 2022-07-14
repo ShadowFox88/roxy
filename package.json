@@ -1,0 +1,25 @@
+{
+  "name": "roxy",
+  "version": "1.0.0",
+  "description": "",
+  "author": "cyrus01337 <cyrus01337@gmail.com>",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyrus01337/roxy.git"
+  },
+  "scripts": {
+    "start": "./bin/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "http-errors": "^2.0.0",
+    "pino": "^8.1.0",
+    "pino-http": "^8.1.1",
+    "pino-pretty": "^8.1.0"
+  }
+}
