@@ -7,6 +7,8 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
+require('dotenv/config');
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
